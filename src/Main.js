@@ -44,6 +44,10 @@ const Main = () => {
         )
     }
 
+    const deltodo = () => {
+        setList([])
+    }
+
     return (
         <SafeAreaView style={main.container}>
   <KeyboardAvoidingView style={{flex: 1 }} behavior= {Platform.OS === "ios" ? "padding" : null }>
@@ -61,6 +65,7 @@ const Main = () => {
 
                 <TodoInput
                     onTodoEnter={todoText => addTodo(todoText)}
+                    delTODO = {deltodo}
                 />
 
             </KeyboardAvoidingView>

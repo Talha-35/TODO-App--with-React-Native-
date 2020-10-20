@@ -62,7 +62,13 @@ const todo_input = StyleSheet.create({
         alignSelf: 'center',
         borderRadius: 8
     },
-    buttonText: {
+    buttonText1: {
+        color: 'black',
+        fontWeight: 'bold',
+        textAlign: 'center'
+    },
+    buttonText2: {
+        marginTop : 1,
         color: 'black',
         fontWeight: 'bold',
         textAlign: 'center'

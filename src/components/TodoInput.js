@@ -19,7 +19,15 @@ const TodoInput = (props) => {
                 style={todo_input.buttonContainer}
                 onPress={() => props.onTodoEnter(text)}
             >
-                <Text style={todo_input.buttonText}>ADD TODO</Text>
+                <Text style={todo_input.buttonText1}>ADD TODO</Text>
+                
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={todo_input.buttonContainer}
+                onPress={props.delTODO}
+            >
+                <Text style={todo_input.buttonText2}>DELETE ALL</Text>
+                
             </TouchableOpacity>
 
         </View>
