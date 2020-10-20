@@ -12,9 +12,8 @@ const Main = () => {
             id: list.length,
             todo: text,
             isDone: false
-        }
-        const newArray = [element, ...list]
-        setList(newArray);
+        }      
+        setList([element, ...list]);
     }
 
     function doneTodo(todoId) {
